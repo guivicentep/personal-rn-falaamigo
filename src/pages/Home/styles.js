@@ -5,81 +5,52 @@ import Constants from 'expo-constants';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 20,
+        paddingHorizontal: 25,
+        paddingTop: Constants.statusBarHeight + 6,
 
     },
-
-    header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-
-    },
-
-    headerText: {
-        fontSize: 15,
-        color: '#737380'
-    },
-
-    headerTextBold: {
-        fontWeight: 'bold'
-    },
-
-    title: {
-        fontSize: 30,
-        marginBottom: 16,
-        marginTop: 48,
-        color: '#13131a',
-        fontWeight: 'bold'
-
-    },
-
-    description: {
-        fontSize: 16,
-        lineHeight: 24,
-        color: '#737380'
-    },
-
-    incidentList: {
-        marginTop: 32,  
-    },
-
-    incident: {
-        padding: 24,
-        borderRadius: 8,
-        backgroundColor: '#FFF',
-        marginBottom: 16
-    },
-
-    incidentProperty: {
-        fontSize: 14,
-        color: '#41414d',
-        fontWeight: 'bold'
-    },
-
-    incidentValue: {
-        marginTop: 8,
-        fontSize: 15,
-        marginBottom: 24,
-        color: '#737380'
-    },
-
-    detailsButton: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+    
+    header:{
         alignItems: 'center'
     },
 
-    detailsButtonText: {
-        color: '#e02041',
-        fontSize: 15,
-        fontWeight: 'bold'
+    imgLogo: {
+        resizeMode: "contain", height: 220, width: 200, 
     },
-
-    logoTecban: {
-        resizeMode: "contain", 
+    body: {
+        marginTop: 40,
+        alignItems: 'center'
+    },  
+    
+    findFriendsButton: {
+        backgroundColor: '#149445',
+        borderRadius: 10,
         height: 100,
-        width: 80
+        width: '85%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+    },
+
+    findFriendsButtonText: {
+        color: '#FFFFFF',
+        fontSize: 25,
+        fontWeight: 'bold'
+    },
+    createVoluntary: {
+        marginTop: 30
+    },
+
+    createVoluntaryText: {
+        color: '#149445',
+        fontSize: 16
+    },
+
+    footer: {
+        alignItems: 'center'
+    },
+
+    imgFooter: {
+        resizeMode: "contain", height: 400, width: 350
     }
 });
